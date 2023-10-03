@@ -46,7 +46,7 @@ def product_registration():
 #Function that prints all the summary of registered products
 def print_product_summary():
     print("-----Registered Products-----")
-    # Iterate over the product_database list and specify index 1
+    # Iterate over the product_database list and specify count at 1
     for count, product in enumerate(product_database, start=1):
         # Prints registered product
         print(f"Product {count}:")
