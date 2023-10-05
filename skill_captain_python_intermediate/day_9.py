@@ -46,67 +46,68 @@ class Cart:
             print(f"Item: {item.name} --- Price: $ {item.price} --- Quantity: {item.quantity}")
 
 
-# List to store the products
-product_database = []
+if __name__ == "__main__":
+    # List to store the products
+    product_database = []
 
-# While loop to prompt for user choice
-while True:
-    print("-----Please select an option-----")
-    print("1. Add a product")
-    print("2. Remove a product")
-    print("3. Display the cart contents")
-    print("4. Quit")
+    # While loop to prompt for user choice
+    while True:
+        print("-----Please select an option-----")
+        print("1. Add a product")
+        print("2. Remove a product")
+        print("3. Display the cart contents")
+        print("4. Quit")
 
-    # Validating user choice
-    try:
-        choice = int(input("Enter your choice here: "))
-        if choice < 1 or choice > 4:
-            print("Invalid choice. Please enter a number between 1 and 4.")
-            print("Please try again.")  # restart the loop and ask user again.
-            continue
-    except ValueError:
-        print("Invalid input. Please try again.")
-        continue  # restart the loop and ask user again.
+        # Validating user choice
+        try:
+            choice = int(input("Enter your choice here: "))
+            if choice < 1 or choice > 4:
+                print("Invalid choice. Please enter a number between 1 and 4.")
+                print("Please try again.")  # restart the loop and ask user again.
+                continue
+        except ValueError:
+            print("Invalid input. Please try again.")
+            continue  # restart the loop and ask user again.
 
-    #  Check for user's choice
-    if choice == 1:
-        # Prompt the user for product details
-        product_name = input("Enter product name: ")
-        product_price = float(input("Enter product price: "))
-        product_quantity = int(input("Enter product quantity: "))
-        # Instantiate a new Product object
-        new_product = Product(product_name, product_price, product_quantity)
-        # add the instantiated object to our product_database
-        product_database.append(new_product)
+        # Check for user's choice
+        if choice == 1:
+            # Prompt the user for product details
+            product_name = input("Enter product name: ")
+            product_price = float(input("Enter product price: "))
+            product_quantity = int(input("Enter product quantity: "))
+            # Instantiate a new Product object
+            new_product = Product(product_name, product_price, product_quantity)
+            # Add the instantiated object to our product_database
+            product_database.append(new_product)
 
-    # Removes a specific product from the product_database
-    elif choice == 2:
-        # Determine if the product_database is empty
-        if not product_database:
-            print("Product database is empty!")
-        else:
-            # Prompt the user for the name of the product they want to remove
-            product_name = input("Enter the name of the product you want to remove: ")
-            for product in product_database:
-                # Iterate through the product_database list to find and remove the product they want to
-                if product.name == product_name:
-                    product_database.remove(product)
-                    print(f"Successfully removed: {product_name}")
-                    break
+        # Removes a specific product from the product_database
+        elif choice == 2:
+            # Determine if the product_database is empty
+            if not product_database:
+                print("Product database is empty!")
             else:
-                # If product does not match any product_name once the loop is finished, the product doesn't exist
-                print(f"{product_name} does not exists.")
+                # Prompt the user for the name of the product they want to remove
+                product_name = input("Enter the name of the product you want to remove: ")
+                for product in product_database:
+                    # Iterate through the product_database list to find and remove the product they want to
+                    if product.name == product_name:
+                        product_database.remove(product)
+                        print(f"Successfully removed: {product_name}")
+                        break
+                else:
+                    # If the product does not match any product_name once the loop is finished, the product doesn't exist
+                    print(f"{product_name} does not exist.")
 
-    elif choice == 3:
-        # Create the user's cart and we add all the products in our product_database to the cart
-        cart_owner = input("Enter your name: ")
-        owner_cart = Cart(cart_owner)
-        # Iterate through the product_database list
-        for product in product_database:
-            # Add the product into the owner_cart
-            owner_cart.add_to_cart(product)
-        owner_cart.display_cart()
+        elif choice == 3:
+            # Create the user's cart and add all the products in our product_database to the cart
+            cart_owner = input("Enter your name: ")
+            owner_cart = Cart(cart_owner)
+            # Iterate through the product_database list
+            for product in product_database:
+                # Add the product into the owner_cart
+                owner_cart.add_to_cart(product)
+            owner_cart.display_cart()
 
-    # Default statement
-    elif choice == 4:
-        break
+        # Default statement
+        elif choice == 4:
+            break
