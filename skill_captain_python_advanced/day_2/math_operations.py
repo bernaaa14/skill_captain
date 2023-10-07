@@ -89,7 +89,7 @@ def maximum(x, y):
     elif x < y:
         return y
     else:
-        print("Both numbers are equal")
+        return "Both numbers are equal"
 
 
 def circumference(radius):
