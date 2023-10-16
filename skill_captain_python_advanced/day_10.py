@@ -1,8 +1,11 @@
 import os
 import shutil
 
+# Prompt the user for the source directory
 src = input("Enter the source directory path: ")
+# Prompt the user for the destination directory
 dst = input("Enter destination path: ")
+# Set the path to the  source directory
 path = src
 
 # Check if the source directory exist
