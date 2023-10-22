@@ -1,2 +1,8 @@
-pokemon = "Charmander"
-print(f"{pokemon} what a great choice!")
+print("Hello world")
+print(Hello world)
+print("")
+print(Hello world)
+
+
+
+
