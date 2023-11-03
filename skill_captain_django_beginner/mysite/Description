@@ -1,0 +1,8 @@
+Changes Made:
+- Added additional fields under Profile (Age, Occupation, Email)
+- Implemented a GET API endpoint in where it accepts name parameter and retrieve the data of the name
+- Implemented an endpoint wherein it updates the email in the database with validations for the required fields.
+
+Challenges faced:
+- I had a great challenge in updating the email in the database,  usually I encounter a lot of errors mainly in the CSRF Token not being set. 
+I spent a large amount of time figuring the workaround with it. 
