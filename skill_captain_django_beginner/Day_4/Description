@@ -1,0 +1,10 @@
+Changes made:
+- Added A GET, PUT, DELETE API in ProfileDetailView
+- Added a docstring for ProfileDetailView
+- Created unit test for getting, updating and deleting profiles
+
+Challenges:
+- I had a great challenge in terms of doing the PUT HttpRequest, I was having a hardtime on using curl due to some fields in my models, It wasn't that time until
+I realized my debug was set to False which slowed down my progress in fixing the error, turns out, it was just some field in my models that was causing the error.
+
+-I also spent much more of the time in writing unit test, basically figuring out how to do the testing and moreover, the overwhelming syntax of it.
