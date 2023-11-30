@@ -5,15 +5,15 @@
 ![Alt text](screenshots/image.png)
 
 2. Retrieve products with a price between a specified range
-![Alt text](image-1.png)
+![Alt text](screenshots/image-1.png)
 
 3. Retrieve products that were added within the last 7 days
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
+![Alt text](screenshots/image-2.png)
+![Alt text](screenshots/image-3.png)
+![Alt text](screenshots/image-4.png)
 
 4. Retrieve products that contain a specific keyword in their name
-![Alt text](image-5.png)
+![Alt text](screenshots/image-5.png)
 
 
 ## Challenges faced:
