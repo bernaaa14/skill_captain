@@ -14,16 +14,18 @@
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-24-23.png>)
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-25-01.png>)
 
-3. Update the details of a product.
+4. Update the details of a product.
+   
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-26-37.png>)
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-27-14.png>)
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-28-02.png>)
 
-4.  Delete a product
+6.  Delete a product
 
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-29-11.png>)
 
 5. View the list of products.
+   
 ![Alt text](<Screenshots/Screenshot from 2023-12-12 20-30-34.png>)
 
 ### Changes made:
