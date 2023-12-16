@@ -37,6 +37,7 @@
 
 - Remove a genre from a specific book.
 ![Alt text](<Screenshots/Screenshot from 2023-12-16 16-23-50.png>)
+
 ![Alt text](<Screenshots/Screenshot from 2023-12-16 16-26-51.png>)
 ![Alt text](<Screenshots/Screenshot from 2023-12-16 16-27-03.png>)
 
