@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Login</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'auth_app/style.css' %}">
+   
+</head>
+<style>
+    body{
+        background-image: url('{% static "/img/studio_ghibli.jpg" %}');
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="reg_container">
+            <h1 align="center">Welcome back</h1>
+            <form method="POST" style = "text-align: center;">  
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Login"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

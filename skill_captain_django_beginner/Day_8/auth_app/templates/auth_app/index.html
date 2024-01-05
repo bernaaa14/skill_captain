@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'auth_app/style.css' %}">
+</head>
+<style>
+    body{
+        background-image: url('{% static "/img/studio_ghibli.jpg" %}');
+    }
+</style>
+<body >
+
+    <div class="wrapper"> 
+        <div class="container">
+            <h2 class="greetings">How's it going? </h2>
+            <a href="{% url 'login' %}">
+            <input type="button" name="login" value="Login"/>
+        </a>
+       <a href="{% url 'registration_page' %}">
+            <input type="button" name="register" value="Register"/>
+        </a>
+        </div>    
+    </div>
+</body>
+</html>

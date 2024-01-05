@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    {% load static %} 
+<style>
+    body {
+        background-image: url('{% static "auth_app/img/spirited_away.gif"%}');
+        background-size: cover;
+    }
+    h3{
+        color: antiquewhite;
+    }
+    h2{
+        color:antiquewhite
+    }
+    input[type=button] {
+    background-color: #ff0000;
+    border-radius: 6px;
+    width: 90px;
+    color: antiquewhite;
+    font-weight: bolder;
+    font-size: large;
+}
+
+</style>
+</head>
+<body>
+    <h2>Hello {{username}}, you have successfully logged in! </h2>
+    <h3><i>"Nothing that happens is ever forgotten, even if you can't remember it" - Zaniba</i></h3>
+    <a href="http://127.0.0.1:8000/login">
+        <input type="button" name="logout" value="Logout"/>
+    </a>   
+</body>
+</html>
